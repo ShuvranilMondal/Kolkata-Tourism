@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ///////// utility classes /////////// */
+
+.contanor{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;   
+}
+
+.text_space{
+    letter-spacing: 0.2em;
+}
+
+.text-red{
+    color: red;
+}
+
+.text-gray{
+    color: rgb(43, 42, 42);
+}
+
+.h1-style{
+    color: white;
+    font-weight: 500;
+    font-size: 5.0rem;
+    letter-spacing: 0.2em;
+    text-transform: capitalize;
+}
+
+.p-style{
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    font-size: 2rem;
+    color: rgb(43, 42, 42);
+    color: white;
+}
+
+.btn{
+    display: inline-block;
+    border-radius: 2em;
+    background-color: white;
+    color: red;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* font-size: 2rem; */
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    margin-top: 1rem ;
+    margin-bottom: 1rem;
+}
+
+/* ///////////// navbar /////////// */
+
+.main{
+    background: #263238;
+}
+
+.navbar{
+    padding: 1rem;
+}
+
+.contanor .navbar .nav-items .logo{
+    float: left;
+}
+
+.contanor .navbar .nav-items ul{
+    float: right;
+    margin-top: 1rem;
+}
+
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.nav-item{
+    display: inline-block;
+    padding: 1rem;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    font-size: 2rem;
+    padding-bottom: 0.2rem;
+    text-transform: uppercase;
+}
+
+.nav-item a:hover{
+    border-bottom: 2px solid white;
+}
+
+/* ////////////////// show element ////////// */
+
+.show-element .main-heading{
+    padding-top: 10rem;
+    color: rgb(39, 38, 38);
+    font-weight: 400;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
+    border-bottom: 3px solid red;
+}
+
+.show-element .main-para{
+    font-weight: 400;
+    font-size: 2rem;
+    color: rgb(43, 42, 42);
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+    margin-bottom: 3rem;
+}
+
+/* ////////////////// show box /////////// */
+
+.about-wraper .left{
+    float: left;
+    width: 50%;
+}
+
+.about-wraper .right{
+    float: right;
+    width: 50%;
+
+}
+.about-wraper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.about-wraper{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.about-wraper li::before{
+    content: '\2713';
+    color: red;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+.about-wraper li{
+    list-style: none;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    font-size: 2rem;
+    color: rgb(43, 42, 42);
+    padding-bottom: 0.5rem;
+}
+
+/* ////////// number /////////////// */
+
+.number .num1{
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.num1 span{
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(235, 44, 44);
+}
+
+.number p{
+    font-weight: 700;
+    color: #333333;
+    font-size: 2em;
+    text-transform: capitalize;
+}
+
+
+.number::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* //////////////// box bar ///////////////// */
+
+.cta-banner{
+    margin-top: 4rem;
+    border: 2px solid red;
+    background: linear-gradient(25deg,#d64c7f , #ee4758 50%);
+    padding: 1rem;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.466);
+    margin-bottom: 10rem;
+}
+.cta-banner-left .cta-line{
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: white;
+    margin-top: 1.4rem;
+    letter-spacing: 0.1em;
+}
+
+.cta-banner-left{
+    width: 60%;
+    float: left;
+}
+
+.cta-banner-right{
+    width: 40%;
+    float: right;
+    text-align: right;
+}
+
+.cta-banner::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.btn-cta{
+    text-align: center;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 4px solid white;
+    padding: 0.3rem 2.5em;
+    letter-spacing:0.3em ;
+    text-decoration: none;
+    color: white;
+}
+
+/* /////////////////// footer/////////// */
+
+.media-links{
+    border: 2px solid black;
+    padding: 2rem;
+    text-align: center;
+    background: #263238;
+}
+
+.media-links i{
+    color: white;
+    margin-bottom:2rem;
+    margin-top: 1rem;
+}
+
+.media-links .media-logo1{
+    padding-right: 10rem;
+}
+
+.media-links .media-logo3{
+    padding-left: 10rem;
+}
+
+.media-links p{
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 0.2em;
+}
+
+
+/* //////////////// contact page ///////////// */
+
+
+.contect-box{
+    background-color: #ececec;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+
+.contect-section{
+    float: left;
+    width: 49%;
+    height: 700px;
+    background-color: white;
+}
+
+.contect-me{
+    float: right;
+    width: 49%;
+    height: 700px;
+    background: white;
+    padding: 1rem 1rem;
+}
+
+.main-box::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.adrs-grp{
+    padding-left: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.adrs-grp i{
+    display: inline-block;
+}
+
+.adrs-grp h2{
+    display: inline-block;
+    margin-left: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    font-size: 3rem;
+    color: rgb(43, 42, 42);
+    text-transform: uppercase;
+}
+
+.adrs-grp p{
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    font-size: 1.5rem;
+    color: rgb(43, 42, 42);
+    text-transform: capitalize;
+    padding-top: 1rem;
+}
+
+.contect-section img{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 100%;
+    max-height: 35rem;
+    min-height: 23rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* //////////// form stylling ////////// */
+
+
+.form h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgb(61, 61, 61);
+    letter-spacing: 0.05em;
+    border-bottom: 3px solid rgb(250, 47, 47);
+    margin-bottom: 2rem;
+}
+
+.form p{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: rgb(43, 42, 42);
+    letter-spacing: 0.03em;
+    margin-bottom: 2rem;
+}
+
+.grp-form label{
+    display: block;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: rgb(43, 42, 42);
+    letter-spacing: 0.03em;
+    padding-bottom: 0.5rem;
+}
+
+.grp-form label::after{
+    content: '*';
+    color:rgb(250, 47, 47) ;
+}
+
+.grp-form input{
+    width: 100%;
+    margin-bottom:2rem ;
+    padding:0.5rem
+}   
+
+.grp-form input:focus{
+    outline: none;
+    border: 2px solid gray;
+}
+
+.grp-form textarea{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    font-size:2rem;
+    font-weight: 500;
+}
+
+.contect-me button{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: #ee4758;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+
+    .nav-items .logo , .nav-items ul{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .main-box .contect-section{
+        float: none;
+        height: auto;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .main-box .contect-me{
+        float: none;
+        width: 100%;
+        height: auto;
+        width: 100%;
+    }
+
+
+    .cta-banner .cta-banner-left, .cta-banner-right{
+        float: none;
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .cta-banner .cta-banner-left{
+        margin-bottom: 2rem;
+    }
+
+    .cta-banner a{
+        letter-spacing: 0px;
+    }
+
+}
+
+@media (min-width:451px) and (max-width:1024px){
+    .main-box .contect-section{
+        float: none;
+        height: auto;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .main-box .contect-me{
+        float: none;
+        width: 100%;
+        height: auto;
+        width: 100%;
+    }
+
+
+    .cta-banner .cta-banner-left, .cta-banner-right{
+        float: none;
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .cta-banner .cta-banner-left{
+        margin-bottom: 2rem;
+    }
+
+    .cta-banner a{
+        letter-spacing: 0px;
+    }
+
+    .contanor .cta-banner{
+        margin-bottom: 55rem;
+    }
+
+
+}
+

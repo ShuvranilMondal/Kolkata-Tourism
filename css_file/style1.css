@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 66.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn{
+    display: inline-block;
+    color: red;
+    background: white;
+    text-transform: uppercase;
+    padding: 0.5em 1.5em;
+    margin: 1rem 1rem;
+    border-radius: 3em;
+
+}
+
+.pbtn{
+    display: inline-block;
+    border: 2px solid red;
+    color: red;
+    padding: 0.3em 0.5em;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    margin: 1rem 1rem;
+    border-radius: 2em;
+}
+
+.pbtn:hover{
+    background:rgb(238, 237, 237) ;
+}
+
+/* ////////// utility classes ///////// */
+
+.contanor{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mh{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.sh{
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+}
+
+.text-gray{
+    font-weight: 500;
+    color: rgb(71, 71, 71);
+}
+
+.text2-gray{
+    color: rgb(73, 73, 73);
+}
+
+.back-ground{
+    background-color: #dddddd;
+}
+
+a{
+    text-decoration: none;
+}
+
+.text-white{
+    color: white;
+}
+
+/* ////////// navbar ///////////// */
+
+.header{
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,.5) , rgba(0,0,0,.5)),url('../images/sauvik-bose-2VHTAW_p2UM-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-bar{
+    padding: 1rem;
+}
+
+.nav-bar .logo{
+    float: left;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+}
+
+.nav-bar .nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+
+.nav-bar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.nav-items .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.nav-items a{
+    padding-bottom: 0.3rem;
+}
+
+.nav-items a:hover{
+    border-bottom: 2px solid white;
+}
+
+/* /////////// header content ///////// */
+
+.header-content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.header-content h1 , .header-content p{
+    margin-bottom: 1rem;
+}
+
+.header-content a:hover{
+    background-color: rgb(209, 209, 209);
+}
+
+/* //////////////// showcase ///////////// */
+
+.showcase{
+    padding: 10rem 0;
+}
+
+.showcase .row{
+    height: 350px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.288);
+}
+
+.row1 , .row2{
+    margin-bottom: 8rem;
+}
+
+.row1 .img-box , .row2 .text-box , .row3 .img-box{
+    float: left;
+    width: 50%;
+}
+
+.row1 .text-box , .row2 .img-box , .row3 .text-box{
+    float: right;
+    width: 50%;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.row .img-box{
+    height: 100%;
+}
+
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.row .text-box{
+    padding: 3rem;
+}
+
+.text-box p{
+    letter-spacing: 0em;
+}
+
+.text-box h2 , .text-box p{
+    margin-bottom: 1rem;
+}
+
+/* /////////////////// show-box ////////////////////// */
+
+.show-box{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.show-box .show-box-row{
+    height: 300px;
+    box-shadow: 0px 18px 42px rgba(43, 42, 42, 0.863);
+}
+
+.show-box .show-box1 , .show-box .show-box2 , .show-box .show-box3{
+    float: left;
+    width: 33.333%;
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+}
+
+.show-box-row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.show-box2{
+    background: linear-gradient(25deg, #d64c7f, #ee4768 50%);
+}
+
+.show-box1 , .show-box3{
+    background: #263238;
+}
+
+/* /////////////// show box style ///////// */
+
+
+.show-box .show-box-style{
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    font-size: 4rem;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+}
+
+.show-box .show-box-para{
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    font-size: 2rem;
+    color: white;
+    text-transform: capitalize;
+}
+
+/* ///////////// .show-box logo design /////////// */
+
+.show-box .show-logo{
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.show-box .logo{
+    color: #ee4768 ;
+    margin-bottom: 1rem;
+}
+
+.media-links{
+    border: 2px solid black;
+    padding: 2rem;
+    text-align: center;
+    background: #263238;
+}
+
+.media-links i{
+    color: white;
+    margin-bottom:2rem;
+    margin-top: 1rem;
+}
+
+.media-links .media-logo1{
+    padding-right: 10rem;
+}
+
+.media-links .media-logo3{
+    padding-left: 10rem;
+}
+
+.media-links p{
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 0.2em;
+}
+
+
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+
+    .nav-bar .logo ,.nav-bar .nav-items{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .contanor .row{
+        width: 100%;
+        height: auto;
+    }
+    
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contanor .show-box-row{
+        height: auto;
+        width: 100%;
+    }
+
+    .show-box-row .show-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width:451px) and (max-width:1024px){
+    .contanor .row{
+        width: 100%;
+        height: auto;
+    }
+    
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contanor .show-box-row{
+        height: auto;
+        width: 100%;
+    }
+
+    .show-box-row .show-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+@media(orientation: landscape) and (max-height:500px){
+    .header{
+        height: 90vmax;
+    }
+}
